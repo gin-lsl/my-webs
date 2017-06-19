@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles.css">
+  <title>DEMO</title>
+ </head>
+ <body>
+  <main>
+    <section id='top' class='top'>
+      <div class="left f-left">
+        <nav class='clearfix'>
+          <a href="" class="logo f-left"><i class="material-icons">face</i></a>
+          <ul class='topnav f-left'>
+            <li><a href="" class='active'><i class="material-icons color-inherit">home</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">control_point</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">people</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">phone_in_talk</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">favorite_border</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">settings</i></a></li>
+            <li><a href=""><i class="material-icons color-inherit">delete</i></a></li>
+          </ul>
+          <span class="arrow-right">
+            <a id='open-topnav'><i id='open-topnav-dir' class="material-icons">arrow_forward</i></a>
+          </span>
+          <ul class="index f-right">
+            <li class='active'><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </nav>
+        <div class="info">
+          <h2>ARIZONA, USA</h2>
+          <p>Lorem ipsum dolor sit amet.</p>  
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem ipsum dolor.</p>
+          <a href="">Details</a>
+        </div>
+      </div>
+      <div class="right f-right">
+        <p class="title">
+          <span class="material-icons">menu</span>
+          <span>WEATHER STATS</span>
+        </p>
+        <div class="content">
+          <div class='clearfix content-top'>
+            <div class="profile f-left">
+              <span><i class="material-icons">cloud_queue</i></span>
+              <span class='temp'>24°</span>
+              <span class='weather-name'>Wind & sun</span>
+            </div>
+            <div class="v-line f-left"></div>
+            <div class="detail f-left">
+              <div class="circle f-left">
+                <canvas id='cc' width='100' height='100'></canvas>
+              </div>
+              <div class="text f-left">
+                <div>
+                  <i class="circle t1"></i>
+                  <i class="text">52%</i>
+                  <i class="name">Sunny</i>
+                </div>
+                <div>
+                  <i class="circle t2"></i>
+                  <i class="text">67%</i>
+                  <i class="name">Windy</i>
+                </div>
+                <div>
+                  <i class="circle t3"></i>
+                  <i class="text">76%</i>
+                  <i class="name">Cloudy</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix content-bottom">
+            
+          </div>
+        </div>
+        <div class='bottom clearfix'>
+          <div class='photo f-left'>
+            <p><i class="material-icons">camera_alt</i></p>
+            <p>Actives</p>
+            <p>PHOTO</p>
+          </div>
+          <div class='v-line f-left'></div>
+          <div class='desc f-left'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia ipsum accusantium magni pariatur ratione voluptas consequatur labore.
+          </div>
+          <div class='arrow-right f-left'>
+            <a href=""><i class="material-icons">keyboard_arrow_right</i></a>
+          </div>
+        </div>
+      </div>
+      <div id="big-image-wrap">
+        <img id='big-image' class='show' src="./images/1.jpg" alt="">
+        <img id='big-image' src="./images/2.jpg" alt="">
+        <img id='big-image' src="./images/3.jpg" alt="">
+        <img id='big-image' src="./images/4.jpg" alt="">
+      </div>
+    </section>
+    <section class="content clearfix">
+      <div id='people-pane' class="left f-left">
+        <div class='people'>
+          <div class="avatar">
+            <a href="">
+              <img src="./images/52637138.jpg" alt="">
+            </a>
+          </div>
+          <div class="name">Taylor Swift</div>
+          <div class="status">
+            <span class="status-c"></span>
+            <span class="status-t">Online</span>
+          </div>
+          <div class="actions">
+            <span><a href=""><i class="material-icons">file_download</i></a></span>
+            <span><a href=""><i class="material-icons">note</i></a></span>
+            <span><a href=""><i class="material-icons">settings</i></a></span>
+          </div>
+          <div>
+            <a class='btn-logout' href="">Log out</a>
+          </div>
+        </div>
+        <div class="messages">
+          <ul>
+            <li class="clearfix">
+              <div class="msg-from f-left">You got the message from Daddy</div>
+              <div class="msg-actions f-left">
+                <span><i class="material-icons cw" title='关闭'>close</i></span>
+                <span><i class="material-icons co" title='打开'>open_in_new</i></span>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="msg-from f-left">You got the message from Daddy</div>
+              <div class="msg-actions f-left">
+                <span><i class="material-icons cw">close</i></span>
+                <span><i class="material-icons co">open_in_new</i></span>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="msg-from f-left">You got the message from Daddy</div>
+              <div class="msg-actions f-left">
+                <span><i class="material-icons cw">close</i></span>
+                <span><i class="material-icons co">open_in_new</i></span>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class="msg-from f-left">You got the message from Daddy</div>
+              <div class="msg-actions f-left">
+                <span><i class="material-icons cw">close</i></span>
+                <span><i class="material-icons co">open_in_new</i></span>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div class='msg-more' title='查看更多'>...</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id='pic-pane' class="pic-pane right">
+        <div class="pic-pane-top clearfix">
+          <div class='search-wrap'>
+            <input class='search f-left' type="text" placeholder='Search'>
+            <i class="material-icons">search</i>
+          </div>
+        </div>
+        <div class="pic-pane-content">
+          <div class="row clearfix">
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (1).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (2).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (3).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (4).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (5).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (6).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (7).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (8).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (9).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (10).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (11).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (12).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (13).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (14).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+            <div class="pic-wrap f-left">
+              <div class="pic"><a href=""><img src="./images/pics/pic (15).jpg" alt=""></a></div>
+              <div class="pic-bottom">
+                <div class="pic-location">Florida, USA</div>
+                <div class="pic-desc"><span class="pic-temp">31°</span><span class="pic-text">Sunny</span></div>
+                <div class="pic-actions">
+                  <span class="like"><i class="material-icons">favorite</i><i>12</i></span>
+                  <span class="talk"><i class="material-icons">phone_in_talk</i><i>8</i></span>
+                  <span class="share"><i class="material-icons">share</i><i>160</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pic-pane-bottom">
+          <div class="pagination">
+            <a href="" class="prev"><i class="material-icons">arrow_back</i></a>
+            <a href="" class="page active"></a>
+            <a href="" class="page"></a>
+            <a href="" class="page"></a>
+            <a href="" class="page"></a>
+            <a href="" class="next"><i class="material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div>
+
+  </div>
+  <script src='./js/main.js'></script>
+ </body>
+</html>
