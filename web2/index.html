@@ -8,7 +8,7 @@
  </head>
  <body>
   <main>
-    <section class='s-first clearfix'>
+    <section id='s-first' class='s-first clearfix'>
       <div class="container">
         <div class='navtop'>
           <h2 class='f-left'>Demo</h2>
@@ -24,37 +24,36 @@
         </div>
         <div class="slider">
           <div class="slider-inner slider-inner-current">
-            <h2>Designer & Maker</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
+            <h2>1Designer &amp; Maker</h2>
+            <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
             <a href="" class="slider-link">
-              <span>READ NOW</span>
+              <span>1READ NOW</span>
             </a>
           </div>
           <div class="slider-inner">
-            <h2>Designer & Maker</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
+            <h2>2Designer &amp; Maker</h2>
+            <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
             <a href="" class="slider-link">
-              <span>READ NOW</span>
+              <span>2READ NOW</span>
             </a>
           </div>
           <div class="slider-inner">
-            <h2>Designer & Maker</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
+            <h2>3Designer &amp; Maker</h2>
+            <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</p>
             <a href="" class="slider-link">
-              <span>READ NOW</span>
+              <span>3READ NOW</span>
             </a>
           </div>
           <div class='clearfix'></div>
           <div class="slider-arrows">
-            <div class="slider-arrow slider-to-left">
-            </div>
-            <div class="slider-arrow slider-to-right">
-            </div>
+            <div class="slider-arrow slider-to-left"></div>
+            <div class="slider-arrow slider-to-right"></div>
           </div>
           <div class="slider-down-arrow">
           </div>
         </div>
       </div>
+      <script src="./js/s-first.js" charset="utf-8"></script>
     </section>
     <section id="group_1" class="group_1">
       <div class="group_1-items container">
@@ -139,7 +138,7 @@
                   <div class="carousel-item">
                     <div class="carousel-item-inner">
                       <div class="group_2_item">
-                        <img src="./images/web1.png" alt="">
+                        <img class="lazy-load-img" data-src='./images/web1.png' alt="">
                       </div>
                       <div class="group_2_text">
                         <div class="desc">
@@ -167,7 +166,7 @@
                   <div class="carousel-item">
                     <div class="carousel-item-inner">
                       <div class="group_2_item">
-                        <img src="./images/web2.png" alt="">
+                        <img class="lazy-load-img" data-src='./images/web2.png' alt="">
                       </div>
                       <div class="group_2_text">
                         <div class="desc">
@@ -195,7 +194,7 @@
                   <div class="carousel-item">
                     <div class="carousel-item-inner">
                       <div class="group_2_item">
-                        <img src="./images/web3.png" alt="">
+                        <img class="lazy-load-img" data-src='./images/web3.png' alt="">
                       </div>
                       <div class="group_2_text">
                         <div class="desc">
@@ -300,7 +299,7 @@
                   <div class="experience lan-c">
                     <span class="exper-circle"></span>
                     <div class="exper-img">
-                      <img src="./images/language_c.jpg" alt="">
+                      <img class="lazy-load-img" data-src='./images/language_c.jpg' alt="">
                     </div>
                     <div class="exper-info">
                       <h4>C language</h4>
@@ -311,7 +310,7 @@
                   <div class="experience lan-java">
                     <span class="exper-circle"></span>
                     <div class="exper-img">
-                      <img src="./images/language_java.png" alt="">
+                      <img class="lazy-load-img" data-src="./images/language_java.png" alt="">
                     </div>
                     <div class="exper-info">
                       <h4>Java</h4>
@@ -325,7 +324,7 @@
                   <div class="experience lan-html5">
                     <span class="exper-circle"></span>
                     <div class="exper-img">
-                      <img src="./images/language_html5.jpg" alt="">
+                      <img class="lazy-load-img" data-src="./images/language_html5.jpg" alt="">
                     </div>
                     <div class="exper-info">
                       <h4>HTML5</h4>
@@ -336,7 +335,7 @@
                   <div class="experience lan-node-js">
                     <span class="exper-circle"></span>
                     <div class="exper-img">
-                      <img src="./images/language_node_js.png" alt="">
+                      <img class="lazy-load-img" data-src="./images/language_node_js.png" alt="">
                     </div>
                     <div class="exper-info">
                       <h4>Node.js</h4>
@@ -379,6 +378,7 @@
                 <div class="con-input-wrap something">
                   <span class="placeholder">Anything you wanna tell me.</span>
                   <textarea class='con-input' name="something"></textarea>
+                  <div class="con-slide"></div>
                 </div>
                 <div class="contact_button_1">
                   <a href="">SEND</a>

@@ -114,6 +114,12 @@ html, body {
   top: 0;
   left: 0;
 }
+.slider-inner h2,
+.slider-inner p,
+.slider-inner a {
+  position: relative;
+  left: 100%;
+}
 .slider-inner h2 {
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
@@ -139,10 +145,14 @@ html, body {
   font-weight: 600;
 }
 .slider-arrows {
+  visibility: hidden;
   height: 60px;
   position: relative;
   /* top: 50%; */
   z-index: 300;
+}
+.slider:hover .slider-arrows {
+  visibility: visible;
 }
 .slider-arrow,
 .slider-arrow i {
@@ -184,6 +194,7 @@ html, body {
   text-align: center;
   z-index: 300;
   background: url('./images/downarrow.png') no-repeat;
+  cursor: pointer;
 }
 .group_1 {
   padding-bottom: 2em;
@@ -627,6 +638,23 @@ html, body {
 .con-input:hover {
   border-color: lightblue;
 }
+.con-slide {
+  position: absolute;
+  height: 144px;
+  width: 14px;
+  bottom: 4px;
+  right: 31px;
+  z-index: 100;
+  background-color: #fff;
+  border: 3px solid lightgrey;
+  border-left: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.con-slide:hover {
+  border-color: lightblue;
+}
 textarea.con-input {
   height: 150px;
   resize: vertical;
@@ -695,4 +723,53 @@ textarea.con-input {
   .group_1_item .ux {
     padding: 1em 1.2em;
   }
+}
+
+/* 定义一些动画效果 */
+@keyframes sliderInnerCurrentAnimation {
+  from { left: 100%; }
+  to { left: 0; }
+}
+@-o-keyframes sliderInnerCurrentAnimation {
+  from { left: 100%; }
+  to { left: 0; }
+}
+@-moz-keyframes sliderInnerCurrentAnimation {
+  from { left: 100%; }
+  to { left: 0; }
+}
+@-moz-keyframes sliderInnerCurrentAnimation {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
+/*.slider-inner-current {
+}*/
+.slider-inner-current h2,
+.slider-inner-current p,
+.slider-inner-current a {
+  position: relative;
+  left: 0;
+  -webkit-animation: sliderInnerCurrentAnimation 500ms;
+  -moz-animation: sliderInnerCurrentAnimation 500ms;
+  -o-animation: sliderInnerCurrentAnimation 500ms;
+  animation: sliderInnerCurrentAnimation 500ms;
+}
+.slider-inner-current h2 {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  -o-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+.slider-inner-current p {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+.slider-inner-current a {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  -o-animation-delay: 300ms;
+  animation-delay: 300ms;
 }

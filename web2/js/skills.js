@@ -29,6 +29,10 @@
       ctx.beginPath()
       ctx.arc(120, 120, 110, START_HU_DU, fixHuDU(360 * percent))
       ctx.stroke()
+      ctx.strokeStyle = '#fff'
+      ctx.beginPath()
+      ctx.arc(120, 120, 110, fixHuDU(360 * percent), fixHuDU(0))
+      ctx.stroke()
     }
     drawCircle(0, 0.73, '#35AFBA')
     drawCircle(1, 0.85, '#FF6060')
