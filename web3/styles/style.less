@@ -1,0 +1,71 @@
+@nice-blue: #5b83ad;
+@light-blue: @nice-blue + #111;
+@main-font-size: 20px;
+@link-color: #428bca;
+@link-color-hover: darken(@link-color, 10%);
+@lsl: 'lsl';
+@myname: 'lsl';
+
+@import './style';
+
+@keyframes leftToRight {
+  0% { left: 0; }
+  10% { left: 4%; }
+  25% { left: 0; }
+  28% { left: 0; }
+  100% { left: 100%; }
+}
+
+/*
+  兼容ie9-ie6
+*/
+.margin-0 {
+  margin: 10px;
+  _margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+#header {
+  display: inline-block;
+  color: @light-blue;
+  font-size: @main-font-size;
+  position: absolute;
+  animation: leftToRight 1000ms;
+}
+
+#footer {
+  font-size: @main-font-size;
+  color: @nice-blue;
+  .margin-0;
+}
+
+.outer {
+  margin: 10px;
+  font-size: @main-font-size;
+  .inner {
+    margin: 20px;
+    font-size: inherit;
+  }
+}
+
+a {
+  color: @link-color;
+}
+
+.o {
+  &:extend(a);
+  .aa {
+    &:extend(.o);
+  }
+  .bb {
+    &:extend(.o);
+  }
+  .cc {
+    &:extend(.o);
+    color: @link-color;
+    background-color: @link-color-hover;
+  }
+}
