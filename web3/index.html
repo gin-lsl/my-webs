@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet/less" href="./styles/style.less" type="text/css">
+
   <script>
   less = {
     env: "development",
@@ -14,32 +15,239 @@
     functions: {},
     dumpLineNumbers: "comments",
     relativeUrls: false,
-    rootpath: ":/a.com/"
+    // rootpath: ":/a.com/"
   };
 </script>
   <script src="./bower_components/less/dist/less.min.js" charset="utf-8"></script>
+  <!--<link rel="stylesheet" href="./dist/style.css">-->
   <script src="./js/a.js"></script>
   <title>DEMO</title>
 </head>
 <body>
   <main>
     <section id="header">
-      test this header text color
-      <a href="">Test Link</a>
+      <nav id="header-nav-toggle" class="header-nav">
+        <div class="container">
+          <ul>
+            <li><a href="">Introduction<span>&gt;</span></a></li>
+            <li><a href="">Lorem ipsum dolor sit amet<span>&gt;</span></a></li>
+            <li><a href="">Skills<span>&gt;</span></a></li>
+            <li><a href="">Profills<span>&gt;</span></a></li>
+            <li><a href="">Projects<span>&gt;</span></a></li>
+            <li><a href="">Github<span>&gt;</span></a></li>
+            <li><a href="">Subscribe<span>&gt;</span></a></li>
+            <li class="last"><a href="">Contact<span>&gt;</span></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-body">
+        <div class="container text-center">
+          <div class="btn-topnav-wrap text-right">
+            <a class="navbtn" data-navbtn-toggle='header-nav-toggle' role="button"><span>打开</span></a>
+          </div>
+          <div class="h1-wrap">
+            <h1>
+              Lorem<span>ipsum</span>
+            </h1>
+            <p class="sub-h1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, id.</p>
+          </div>
+          <div class="btn-goto-wrap">
+            <a class="goto" role="button">Lorem ipsum dolor</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section0"></section>
+    <section class="section0">
+      <div class="container">
+        <div class="wrap text-center">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p class="split"></p>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem molestiae, cupiditate odit aliquam beatae ea explicabo neque quaerat natus. Ducimus numquam sunt earum amet perspiciatis odio, ratione minus asperiores magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, tempore qui sint. Quibusdam, natus ea iusto perspiciatis molestias, vitae rerum ex quis, adipisci tempore provident ipsa unde eveniet, sint et.</p>
+        </div>
+      </div>
+    </section>
     <section class="section1">
-
+      <div class="container">
+        <div class="wrap text-center">
+          <h2>do you wanna do, and you'll do it well</h2>
+          <div class="split"></div>
+          <div class="content clearfix">
+            <div class="col-1-3">
+              <div class="circle"><i>{ ~ }</i></div>
+              <h2>Lorem ipsum dolor.</h2>
+              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quidem, consectetur enim optio? Provident voluptatem labore modi saepe praesentium ipsum quaerat voluptate. Eaque veniam quae ea, dicta, vel rem minus.</p>
+            </div>
+            <div class="col-1-3">
+              <div class="circle"><i>&lt;/&gt;</i></div>
+              <h2>Veniam, consectetur, eligendi.</h2>
+              <p class="desc">Eaque, quis? Optio eligendi praesentium nemo maiores, natus consequatur animi iure adipisci, deleniti, officiis fugit reiciendis delectus quae amet quia fugiat voluptatum veritatis dolorem culpa cumque et aperiam, nihil minus.</p>
+            </div>
+            <div class="col-1-3">
+              <div class="circle"><i>/* ... */</i></div>
+              <h2>Eius animi, aliquam!</h2>
+              <p class="desc">Quae rerum ex soluta autem sit maiores esse. Aut magnam non nostrum mollitia blanditiis, animi eaque cumque delectus ratione provident amet quae, doloribus et ut necessitatibus veritatis dolores culpa perferendis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section2"></section>
-    <section class="section3"></section>
-    <section class="section4"></section>
-    <section class="section5"></section>
-    <section class="section6"></section>
-    <section class="section7"></section>
-    <section class="section8"></section>
-    <section class="section9"></section>
-    <section class="section10"></section>
+    <section class="section2 text-center" style="padding: 0;">
+      <div class="wrap">
+        <div class="img-wrap">
+          <div class="img"></div>
+        </div>
+        <div class="pane-wrap">
+          <div class="pane">
+            <ul>
+              <li>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="split"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, in veritatis pariatur qui voluptas velit a molestiae, asperiores vero voluptate! Possimus asperiores voluptatibus, deserunt suscipit atque dolore fugiat amet nulla.</p>
+                <p>Vel quo dolor voluptate, illo totam quisquam maiores magni soluta corrupti reprehenderit tenetur exercitationem, voluptates aut nulla molestiae impedit commodi error nisi natus odio dolorum id dignissimos velit tempora cum!</p>
+                <p>Architecto quia quas iure vitae eligendi? Voluptatibus quaerat, ex deleniti suscipit officiis totam dolores explicabo cupiditate, molestiae esse, porro quod error. Molestias, odit sed adipisci aut perferendis, minus eligendi officia.</p>
+              </li>
+              <li>
+                <h2>Explicabo quae temporibus, sint voluptas?</h2>
+                <div class="split"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae esse veritatis ratione quidem laboriosam cumque sed enim et vitae quaerat quo labore voluptate saepe, quod recusandae culpa corporis. Adipisci.</p>
+                <p>Excepturi architecto soluta aperiam eius itaque, incidunt sunt quis ad amet error commodi maxime voluptate ex impedit possimus aliquam placeat harum quam, cupiditate asperiores reiciendis reprehenderit nobis. Illum, doloribus, impedit!</p>
+                <p>Tempora perspiciatis quibusdam, tenetur, sequi error ducimus provident voluptatem rerum sint quaerat placeat ullam earum quos. Odit corporis ipsum magnam soluta voluptatibus, natus, fugiat vel eos voluptatum rem, rerum maxime!</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pane-index">
+            <ol>
+              <li role="button"><a class="active"></a></li>
+              <li role="button"><a></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3 text-center">
+      <div class="wrap">
+        <h2>Lorem ipsum dolor sit</h2>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <div><span role="button"><img src="./images/down.png"></span></div>
+      </div>
+    </section>
+    <section class="section4 text-center">
+      <div class="container">
+        <div class="wrap">
+          <div class="pane-wrap">
+            <div class="pane">
+              <ul>
+                <li>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-01.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Lorem ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reiciendis dolorum, quisquam ipsam eos, vero sunt. Eius, molestiae fugit, earum itaque dolorum harum nisi dicta molestias quidem quisquam, sed et?</p>
+                  </div>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-02.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Qui cum, laborum.</h2>
+                    <p>Quasi ipsa, sapiente unde velit dolor nisi aliquid sint ab debitis accusamus hic iure corporis provident cum architecto ut blanditiis nobis, deserunt, magni soluta distinctio culpa aut expedita facilis! Nulla!</p>
+                  </div>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-03.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Laudantium, debitis, eos.</h2>
+                    <p>Cum temporibus, reprehenderit fugit aspernatur quos error velit id vero voluptates, reiciendis nobis quis. Architecto assumenda molestias quasi magnam aliquid possimus distinctio commodi, libero, in facilis reiciendis culpa dicta eligendi.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-01.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Lorem ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, totam facilis nisi aliquam animi vitae, delectus id in vero consequuntur ab aliquid amet cupiditate quis sunt similique pariatur ipsa obcaecati.</p>
+                  </div>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-02.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Aliquid, maiores, labore.</h2>
+                    <p>Consequuntur quisquam ullam, vitae unde vel aliquam, odio voluptatum. In repellendus voluptatibus rerum debitis numquam blanditiis reiciendis asperiores totam ex reprehenderit quibusdam, similique provident dolores eius natus, soluta molestias earum.</p>
+                  </div>
+                  <div class="col-1-3">
+                    <div class="img">
+                      <img src="./images/portfolio-03.jpg" alt="">
+                      <div class="overlay"><a href=""><span></span><span>VIEW MORE</span></a></div>
+                    </div>
+                    <h2>Doloremque, fugiat voluptatibus?</h2>
+                    <p>Quae quos eveniet eum accusamus esse nisi ullam assumenda neque, at quasi officia! Sequi reiciendis, libero blanditiis animi, eaque id incidunt nam optio quaerat neque aperiam sit, assumenda dolores natus.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pane-index">
+            <ol>
+              <li><a class="active"></a></li>
+              <li><a></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section5 text-center">
+      <a role="button" href="https://github.com/gin-lsl">view github</a>
+    </section>
+    <section class="section6 text-center">
+      <div class="wrap">
+        <h2>subscribe</h2>
+        <form>
+          <input type="text" required>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+    <section class="section7">
+      <div class="container text-center">
+        <div class="wrap">
+          <h2>contact us</h2>
+          <div class="split"></div>
+          <div class="pane-wrap">
+            <div class="pane">
+              <div class="col-1-3">
+                <div class="pane-inner">
+                  <h3>address</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="pane-inner">
+                  <h3>phone</h3>
+                  <p>+86 183xxx2611</p>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="pane-inner">
+                  <h3>email</h3>
+                  <p>gin_lsl@outlook.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div class="container text-right">
+      Copyright &copy; 2017 gin_lsl@outlook.com
+    </div>
+  </footer>
 </body>
 </html>

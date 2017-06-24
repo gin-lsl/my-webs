@@ -1,0 +1,59 @@
+@keyframes leftToRight {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 4%;
+  }
+  25% {
+    left: 0;
+  }
+  28% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*
+  兼容ie9-ie6
+*/
+.margin-0 {
+  margin: 10px;
+  _margin: 0;
+}
+body {
+  position: relative;
+}
+#header {
+  display: inline-block;
+  color: #6c94be;
+  font-size: 20px;
+  position: absolute;
+  background: url('../images/hero-bg.jpg') center center;
+}
+#footer {
+  font-size: 20px;
+  color: #5b83ad;
+  margin: 10px;
+  _margin: 0;
+}
+.outer {
+  margin: 10px;
+  font-size: 20px;
+}
+.outer .inner {
+  margin: 20px;
+  font-size: inherit;
+}
+a,
+.o,
+.o .aa,
+.o .bb,
+.o .cc {
+  color: #428bca;
+}
+.o .cc {
+  color: #428bca;
+  background-color: #3071a9;
+}
